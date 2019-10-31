@@ -11,16 +11,29 @@ import UIKit
 import WebKit
 
 struct ContentView: View {
-    @ObservedObject private var tweetsVM = TweetsViewModel()
+    @ObservedObject private var tweets = TweetsViewModel()
     
     var body: some View {
         NavigationView{
-            List(self.tweetsVM.tweets, id: \.id){ tweet in
-                NavigationLink(destination: PageView(url: tweet.url)){
-                    Text(tweet.title)
-                }
+            TabView{
+                List(self.tweets.nba, id: \.id){ tweet in
+                    NavigationLink(destination: PageView(url: tweet.url)){
+                        Text(tweet.title)
+                    }
+                }.tabItem{
+                    Text("NBA")
+                    .bold()
+                }.tag(0)
+                
+                List(self.tweets.nfl, id: \.id){ tweet in
+                    NavigationLink(destination: PageView(url: tweet.url)){
+                        Text(tweet.title)
+                    }
+                }.tabItem{
+                    Text("NFL")
+                }.tag(1)
             }
-        .navigationBarTitle(Text("News"))
+            .navigationBarTitle(Text("News this week"))
         }
     }
 }

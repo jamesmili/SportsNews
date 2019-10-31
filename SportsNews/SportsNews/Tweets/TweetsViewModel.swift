@@ -9,12 +9,18 @@
 import Foundation
 
 class TweetsViewModel: ObservableObject{
-    @Published var tweets = [TweetViewModel]()
-    
+    @Published var nba = [TweetViewModel]()
+    @Published var nfl = [TweetViewModel]()
+
     init(){
-        TweetsManager().getPost { tweet in
+        TweetsManager().getNBAPost { tweet in
             if let tweet = tweet {
-                self.tweets = tweet.map(TweetViewModel.init)
+                self.nba = tweet.map(TweetViewModel.init)
+            }
+        }
+        TweetsManager().getNFLPost { tweet in
+            if let tweet = tweet {
+                self.nfl = tweet.map(TweetViewModel.init)
             }
         }
     }
