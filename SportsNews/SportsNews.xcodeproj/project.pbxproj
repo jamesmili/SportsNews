@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D11C153236A1947006BAC83 /* TweetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D11C152236A1947006BAC83 /* TweetsViewModel.swift */; };
 		8DC3C4A823465D7A00C359EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3C4A723465D7A00C359EC /* AppDelegate.swift */; };
 		8DC3C4AA23465D7A00C359EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3C4A923465D7A00C359EC /* SceneDelegate.swift */; };
 		8DC3C4AD23465D7A00C359EC /* SportsNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3C4AB23465D7A00C359EC /* SportsNews.xcdatamodeld */; };
@@ -16,8 +17,8 @@
 		8DC3C4B723465D7B00C359EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DC3C4B523465D7B00C359EC /* LaunchScreen.storyboard */; };
 		8DC3C4C223465D7B00C359EC /* SportsNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3C4C123465D7B00C359EC /* SportsNewsTests.swift */; };
 		8DC3C4CD23465D7C00C359EC /* SportsNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3C4CC23465D7C00C359EC /* SportsNewsUITests.swift */; };
-		8DC3C4DC23465F7000C359EC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3C4DB23465F7000C359EC /* API.swift */; };
-		8DC3C4DE2346618000C359EC /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3C4DD2346618000C359EC /* NetworkingManager.swift */; };
+		8DC3C4DC23465F7000C359EC /* Tweets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3C4DB23465F7000C359EC /* Tweets.swift */; };
+		8DC3C4DE2346618000C359EC /* TweetsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3C4DD2346618000C359EC /* TweetsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D11C152236A1947006BAC83 /* TweetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsViewModel.swift; sourceTree = "<group>"; };
 		8DC3C4A423465D7A00C359EC /* SportsNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC3C4A723465D7A00C359EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DC3C4A923465D7A00C359EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,8 +55,8 @@
 		8DC3C4C823465D7C00C359EC /* SportsNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportsNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC3C4CC23465D7C00C359EC /* SportsNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsNewsUITests.swift; sourceTree = "<group>"; };
 		8DC3C4CE23465D7C00C359EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8DC3C4DB23465F7000C359EC /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		8DC3C4DD2346618000C359EC /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		8DC3C4DB23465F7000C359EC /* Tweets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweets.swift; sourceTree = "<group>"; };
+		8DC3C4DD2346618000C359EC /* TweetsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D1B85ED236A6130003229AF /* Tweets */ = {
+			isa = PBXGroup;
+			children = (
+				8DC3C4DB23465F7000C359EC /* Tweets.swift */,
+				8DC3C4DD2346618000C359EC /* TweetsManager.swift */,
+				8D11C152236A1947006BAC83 /* TweetsViewModel.swift */,
+			);
+			path = Tweets;
+			sourceTree = "<group>";
+		};
 		8DC3C49B23465D7A00C359EC = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +117,7 @@
 		8DC3C4A623465D7A00C359EC /* SportsNews */ = {
 			isa = PBXGroup;
 			children = (
+				8D1B85ED236A6130003229AF /* Tweets */,
 				8DC3C4A723465D7A00C359EC /* AppDelegate.swift */,
 				8DC3C4A923465D7A00C359EC /* SceneDelegate.swift */,
 				8DC3C4AE23465D7A00C359EC /* ContentView.swift */,
@@ -113,8 +126,6 @@
 				8DC3C4B823465D7B00C359EC /* Info.plist */,
 				8DC3C4AB23465D7A00C359EC /* SportsNews.xcdatamodeld */,
 				8DC3C4B223465D7B00C359EC /* Preview Content */,
-				8DC3C4DB23465F7000C359EC /* API.swift */,
-				8DC3C4DD2346618000C359EC /* NetworkingManager.swift */,
 			);
 			path = SportsNews;
 			sourceTree = "<group>";
@@ -279,9 +290,10 @@
 				8DC3C4AD23465D7A00C359EC /* SportsNews.xcdatamodeld in Sources */,
 				8DC3C4A823465D7A00C359EC /* AppDelegate.swift in Sources */,
 				8DC3C4AF23465D7A00C359EC /* ContentView.swift in Sources */,
-				8DC3C4DE2346618000C359EC /* NetworkingManager.swift in Sources */,
+				8DC3C4DE2346618000C359EC /* TweetsManager.swift in Sources */,
 				8DC3C4AA23465D7A00C359EC /* SceneDelegate.swift in Sources */,
-				8DC3C4DC23465F7000C359EC /* API.swift in Sources */,
+				8DC3C4DC23465F7000C359EC /* Tweets.swift in Sources */,
+				8D11C153236A1947006BAC83 /* TweetsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
