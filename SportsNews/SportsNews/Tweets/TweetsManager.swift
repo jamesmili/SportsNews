@@ -1,5 +1,5 @@
 //
-//  NetworkingManager.swift
+//  TweetsManager.swift
 //  SportsNews
 //
 //  Created by James Militante on 2019-10-03.

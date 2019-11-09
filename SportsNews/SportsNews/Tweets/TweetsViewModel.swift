@@ -13,6 +13,7 @@ class TweetsViewModel: ObservableObject{
     @Published var nfl = [TweetViewModel]()
 
     init(){
+        //results from JSON decoder are mapped to tweet models
         TweetsManager().getNBAPost { tweet in
             if let tweet = tweet {
                 self.nba = tweet.map(TweetViewModel.init)
@@ -25,7 +26,7 @@ class TweetsViewModel: ObservableObject{
         }
     }
 }
-
+//models for individual tweets
 struct TweetViewModel: Identifiable{
     var tweet: Child
     init(tweet: Child){

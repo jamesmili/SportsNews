@@ -1,5 +1,5 @@
 //
-//  API.swift
+//  Tweets.swift
 //  SportsNews
 //
 //  Created by James Militante on 2019-10-03.
@@ -26,3 +26,4 @@ struct ChildData: Codable{
     let id: String
     let created_utc: Double
 }
+
