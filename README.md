@@ -63,5 +63,5 @@ The ContentView calls on the TweetsViewModel class to get its values and display
 * macOS 10.15+ (for SwiftUI)
 
 ## License
-<a target="_blank" href="https://icons8.com/icons/set/basketball">Basketball</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-<a target="_blank" href="https://icons8.com/icons/set/sport">Sport</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+* <a target="_blank" href="https://icons8.com/icons/set/basketball">Basketball</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+* <a target="_blank" href="https://icons8.com/icons/set/sport">Sport</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
