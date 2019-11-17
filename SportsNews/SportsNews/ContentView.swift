@@ -9,74 +9,78 @@
 import SwiftUI
 import UIKit
 import WebKit
+import RefreshUI
 
 struct ContentView: View {
     @ObservedObject private var tweets = TweetsViewModel()
     @State private var selectedTab = 1
+    @State var isLoading: Bool = false
     
+    init(){
+        self.tweets.updateNFL()
+    }
+
     var body: some View {
-        TabView(selection: $selectedTab){
+        TabView{
             NavigationView{
-                List(self.tweets.nba, id: \.id){ tweet in
-                    NavView(tweet: tweet)
+                List{
+                    ForEach(self.tweets.nba, id: \.id){ tweet in
+                            NavView(tweet: tweet)
                     }
+                }.onPull(perform: {
+                    self.tweets.updateNBA()
+                }, isLoading: isLoading)
                 .navigationBarTitle(Text("NBA News"))
+            }.onAppear{
+                self.tweets.updateNBA()
             }.tabItem{
                 Image("basketball")
                 Text("NBA")
-            }.tag(1)
+            }
             
             NavigationView{
-                List(self.tweets.nfl, id: \.id){ tweet in
-                    NavView(tweet: tweet)
-                }
+                List{
+                    ForEach(self.tweets.nfl, id: \.id){ tweet in
+                            NavView(tweet: tweet)
+                    }
+                }.onPull(perform: {
+                    self.tweets.updateNFL()
+                }, isLoading: isLoading)
                 .navigationBarTitle(Text("NFL News"))
+            }.onAppear{
+                    self.tweets.updateNFL()
             }.tabItem{
                 Image("football")
                 Text("NFL")
-            }.tag(2)
+            }
         }
-        
     }
 }
 
 struct NavView: View{
-    @State var showDetail: Bool = false
     @State var tweet: TweetViewModel
     @State var showingTweet = false
 
     var body: some View{
         VStack{
-            Button(action: { self.showingTweet.toggle() }) {
-            VStack(alignment: .leading,spacing: 12 ,content: {
-                Text(tweet.title)
-                .lineLimit(10)
-                Text(getTimeStamp(utc: tweet.utc))
-                .font(Font.custom("timestamp", size: 10))
-            })
+            NavigationLink(destination: PageView(url: self.tweet.url)) {
+                VStack(alignment: .leading,spacing: 12, content: {
+                    Text(tweet.title)
+                    .lineLimit(3)
+                    Text(getTimeStamp(utc: tweet.utc))
+                    .font(Font.custom("timestamp", size: 10))
+                })
             }
-        }.sheet(isPresented: $showingTweet){
-            PageView(url: self.tweet.url)
         }
     }
 }
 
 struct PageView: View{
     let url: String
-    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
 
     var body: some View{
-        VStack(alignment: .leading){
-            Button(action: {self.presentationMode.wrappedValue.dismiss()}){
-                HStack{
-                    Image(systemName: "chevron.left")
-                    Text("Back")
-                }
-            }
-            .padding(.leading, 12)
-            .padding(.top, 12)
-            WebView(request: URLRequest(url: URL(string: url)!))
-        }
+        WebView(request: URLRequest(url: URL(string: url)!))
+        .navigationBarTitle("", displayMode: .inline)
     }
 }
 

@@ -11,14 +11,16 @@ import Foundation
 class TweetsViewModel: ObservableObject{
     @Published var nba = [TweetViewModel]()
     @Published var nfl = [TweetViewModel]()
-
-    init(){
-        //results from JSON decoder are mapped to tweet models
+    
+    func updateNBA(){
         TweetsManager().getNBAPost { tweet in
             if let tweet = tweet {
                 self.nba = tweet.map(TweetViewModel.init)
             }
         }
+    }
+    
+    func updateNFL(){
         TweetsManager().getNFLPost { tweet in
             if let tweet = tweet {
                 self.nfl = tweet.map(TweetViewModel.init)
