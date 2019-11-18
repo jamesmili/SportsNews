@@ -15,17 +15,19 @@ struct ContentView: View {
     @ObservedObject private var tweets = TweetsViewModel()
     @State private var selectedTab = 1
     @State var isLoading: Bool = false
-    
-    init(){
-        self.tweets.updateNFL()
-    }
 
     var body: some View {
         TabView{
             NavigationView{
                 List{
-                    ForEach(self.tweets.nba, id: \.id){ tweet in
-                            NavView(tweet: tweet)
+                    if(self.tweets.nba.count == 0){
+                        ForEach((1...11), id: \.self){ _ in
+                            LoadingView(lines: 3)
+                        }
+                    }else{
+                        ForEach(self.tweets.nba, id: \.id){ tweet in
+                                NavView(tweet: tweet)
+                        }
                     }
                 }.onPull(perform: {
                     self.tweets.updateNBA()
@@ -40,8 +42,14 @@ struct ContentView: View {
             
             NavigationView{
                 List{
-                    ForEach(self.tweets.nfl, id: \.id){ tweet in
-                            NavView(tweet: tweet)
+                    if(self.tweets.nfl.count == 0){
+                    ForEach((1...11), id: \.self){ _ in
+                            LoadingView(lines: 3)
+                        }
+                    }else{
+                        ForEach(self.tweets.nfl, id: \.id){ tweet in
+                                NavView(tweet: tweet)
+                        }
                     }
                 }.onPull(perform: {
                     self.tweets.updateNFL()
@@ -96,6 +104,26 @@ struct WebView: UIViewRepresentable{
     }
 }
 
+struct LoadingView: View{
+    private var lines: Int
+    
+    init(lines: Int){
+        self.lines = lines
+    }
+    
+    var body: some View {
+        VStack(alignment: .leading){
+            ForEach((1...self.lines), id: \.self){_ in
+                RoundedRectangle(cornerRadius: 20, style: .continuous)
+                .fill(Color(red: 125/255, green: 125/255, blue: 125/255))
+                    .frame(height: 12)
+            }
+             RoundedRectangle(cornerRadius: 20, style: .continuous)
+            .fill(Color(red: 175/255, green: 175/255, blue: 175/255))
+            .frame(width: 65, height: 10)
+        }
+    }
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

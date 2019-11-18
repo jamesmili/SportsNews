@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8D0D98D52381E21100C8E19B /* RefreshUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8D0D98D42381E21100C8E19B /* RefreshUI */; };
+		8D0D98D72381E4D000C8E19B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8D0D98D62381E4D000C8E19B /* README.md */; };
 		8D11C153236A1947006BAC83 /* TweetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D11C152236A1947006BAC83 /* TweetsViewModel.swift */; };
 		8DC3C4A823465D7A00C359EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3C4A723465D7A00C359EC /* AppDelegate.swift */; };
 		8DC3C4AA23465D7A00C359EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3C4A923465D7A00C359EC /* SceneDelegate.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D0D98D62381E4D000C8E19B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8D11C152236A1947006BAC83 /* TweetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsViewModel.swift; sourceTree = "<group>"; };
 		8DC3C4A423465D7A00C359EC /* SportsNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC3C4A723465D7A00C359EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		8DC3C49B23465D7A00C359EC = {
 			isa = PBXGroup;
 			children = (
+				8D0D98D62381E4D000C8E19B /* README.md */,
 				8DC3C4A623465D7A00C359EC /* SportsNews */,
 				8DC3C4C023465D7B00C359EC /* SportsNewsTests */,
 				8DC3C4CB23465D7C00C359EC /* SportsNewsUITests */,
@@ -270,6 +273,7 @@
 			files = (
 				8DC3C4B723465D7B00C359EC /* LaunchScreen.storyboard in Resources */,
 				8DC3C4B423465D7B00C359EC /* Preview Assets.xcassets in Resources */,
+				8D0D98D72381E4D000C8E19B /* README.md in Resources */,
 				8DC3C4B123465D7B00C359EC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
