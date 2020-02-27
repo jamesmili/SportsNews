@@ -10,7 +10,7 @@ SportsNews is an iOS application that curates tweets from the NBA and NFL. Each 
 
 1. View NBA related tweets.
 2. View NFL related tweets.
-3. View tweets specific from any NBA and NFL team by searching on the search bar. 
+3. View tweets from any NBA and NFL team by searching on the search bar. 
 
 ## How to install
 
