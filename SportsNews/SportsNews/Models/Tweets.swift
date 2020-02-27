@@ -8,19 +8,19 @@
 
 import Foundation
 
-struct Posts: Codable{
+struct Posts: Decodable{
     var data: Tweet
 }
 
-struct Tweet: Codable{
+struct Tweet: Decodable{
     var children: [Child]
 }
 
-struct Child: Codable{
+struct Child: Decodable{
     var data: ChildData
 }
 
-struct ChildData: Codable{
+struct ChildData: Decodable, Identifiable{
     let title: String
     let url: String
     let id: String

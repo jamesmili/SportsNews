@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "RefreshUI",
+        "repositoryURL": "https://github.com/noppefoxwolf/RefreshUI",
+        "state": {
+          "branch": null,
+          "revision": "b3837d87ebc7d21d95b17223ea3476b4eb245404",
+          "version": "0.1.0"
+        }
+      },
+      {
+        "package": "Rotoscope",
+        "repositoryURL": "git@github.com:noppefoxwolf/Rotoscope.git",
+        "state": {
+          "branch": null,
+          "revision": "99da0c0f2f9c3afde63c72cd15d910e5f504d057",
+          "version": "0.1.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

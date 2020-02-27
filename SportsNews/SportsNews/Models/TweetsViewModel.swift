@@ -11,9 +11,10 @@ import Foundation
 class TweetsViewModel: ObservableObject{
     @Published var nba = [TweetViewModel]()
     @Published var nfl = [TweetViewModel]()
+    @Published var team = [TweetViewModel]()
     
     func updateNBA(){
-        TweetsManager().getNBAPost { tweet in
+        TweetsManager().getPost(sport: "nba") { tweet in
             if let tweet = tweet {
                 self.nba = tweet.map(TweetViewModel.init)
             }
@@ -21,9 +22,17 @@ class TweetsViewModel: ObservableObject{
     }
     
     func updateNFL(){
-        TweetsManager().getNFLPost { tweet in
+        TweetsManager().getPost(sport: "nfl") { tweet in
             if let tweet = tweet {
                 self.nfl = tweet.map(TweetViewModel.init)
+            }
+        }
+    }
+    
+    func updateTeam(team: String){
+        TweetsManager().getPost(sport: team) { tweet in
+            if let tweet = tweet {
+                self.team = tweet.map(TweetViewModel.init)
             }
         }
     }

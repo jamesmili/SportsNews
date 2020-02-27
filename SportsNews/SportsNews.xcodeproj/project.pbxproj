@@ -10,6 +10,16 @@
 		8D0D98D52381E21100C8E19B /* RefreshUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8D0D98D42381E21100C8E19B /* RefreshUI */; };
 		8D0D98D72381E4D000C8E19B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8D0D98D62381E4D000C8E19B /* README.md */; };
 		8D11C153236A1947006BAC83 /* TweetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D11C152236A1947006BAC83 /* TweetsViewModel.swift */; };
+		8D1E12C72406F142009F92B8 /* NBATweetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1E12C62406F142009F92B8 /* NBATweetsView.swift */; };
+		8D1E12C92406F1D9009F92B8 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1E12C82406F1D9009F92B8 /* LoadingView.swift */; };
+		8D1E12CB2406F2BC009F92B8 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1E12CA2406F2BC009F92B8 /* NavView.swift */; };
+		8D1E12CD2406F44F009F92B8 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1E12CC2406F44F009F92B8 /* PageView.swift */; };
+		8D1E12CF2406F4E8009F92B8 /* TimeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1E12CE2406F4E8009F92B8 /* TimeStamp.swift */; };
+		8D1E12D124070A24009F92B8 /* NFLTweetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1E12D024070A24009F92B8 /* NFLTweetsView.swift */; };
+		8D1E12D324070B5E009F92B8 /* TeamTweetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1E12D224070B5E009F92B8 /* TeamTweetsView.swift */; };
+		8D1E12D524070D02009F92B8 /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1E12D424070D02009F92B8 /* Teams.swift */; };
+		8D1E12D724071534009F92B8 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1E12D624071534009F92B8 /* SearchView.swift */; };
+		8D509CCE2407204D00DD6C54 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D509CCD2407204D00DD6C54 /* SearchBarView.swift */; };
 		8DC3C4A823465D7A00C359EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3C4A723465D7A00C359EC /* AppDelegate.swift */; };
 		8DC3C4AA23465D7A00C359EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3C4A923465D7A00C359EC /* SceneDelegate.swift */; };
 		8DC3C4AD23465D7A00C359EC /* SportsNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3C4AB23465D7A00C359EC /* SportsNews.xcdatamodeld */; };
@@ -43,6 +53,16 @@
 /* Begin PBXFileReference section */
 		8D0D98D62381E4D000C8E19B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8D11C152236A1947006BAC83 /* TweetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsViewModel.swift; sourceTree = "<group>"; };
+		8D1E12C62406F142009F92B8 /* NBATweetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBATweetsView.swift; sourceTree = "<group>"; };
+		8D1E12C82406F1D9009F92B8 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		8D1E12CA2406F2BC009F92B8 /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
+		8D1E12CC2406F44F009F92B8 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		8D1E12CE2406F4E8009F92B8 /* TimeStamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStamp.swift; sourceTree = "<group>"; };
+		8D1E12D024070A24009F92B8 /* NFLTweetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFLTweetsView.swift; sourceTree = "<group>"; };
+		8D1E12D224070B5E009F92B8 /* TeamTweetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTweetsView.swift; sourceTree = "<group>"; };
+		8D1E12D424070D02009F92B8 /* Teams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teams.swift; sourceTree = "<group>"; };
+		8D1E12D624071534009F92B8 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		8D509CCD2407204D00DD6C54 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		8DC3C4A423465D7A00C359EC /* SportsNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC3C4A723465D7A00C359EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DC3C4A923465D7A00C359EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,14 +108,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8D1B85ED236A6130003229AF /* Tweets */ = {
+		8D1B85ED236A6130003229AF /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				8DC3C4DB23465F7000C359EC /* Tweets.swift */,
 				8DC3C4DD2346618000C359EC /* TweetsManager.swift */,
 				8D11C152236A1947006BAC83 /* TweetsViewModel.swift */,
+				8D1E12CE2406F4E8009F92B8 /* TimeStamp.swift */,
+				8D1E12D424070D02009F92B8 /* Teams.swift */,
 			);
-			path = Tweets;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8D8FAA3623DA965600A657DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8DC3C4AE23465D7A00C359EC /* ContentView.swift */,
+				8D1E12C62406F142009F92B8 /* NBATweetsView.swift */,
+				8D1E12D024070A24009F92B8 /* NFLTweetsView.swift */,
+				8D1E12C82406F1D9009F92B8 /* LoadingView.swift */,
+				8D1E12CA2406F2BC009F92B8 /* NavView.swift */,
+				8D1E12CC2406F44F009F92B8 /* PageView.swift */,
+				8D1E12D224070B5E009F92B8 /* TeamTweetsView.swift */,
+				8D1E12D624071534009F92B8 /* SearchView.swift */,
+				8D509CCD2407204D00DD6C54 /* SearchBarView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		8DC3C49B23465D7A00C359EC = {
@@ -122,10 +160,10 @@
 		8DC3C4A623465D7A00C359EC /* SportsNews */ = {
 			isa = PBXGroup;
 			children = (
-				8D1B85ED236A6130003229AF /* Tweets */,
+				8D1B85ED236A6130003229AF /* Models */,
+				8D8FAA3623DA965600A657DF /* Views */,
 				8DC3C4A723465D7A00C359EC /* AppDelegate.swift */,
 				8DC3C4A923465D7A00C359EC /* SceneDelegate.swift */,
-				8DC3C4AE23465D7A00C359EC /* ContentView.swift */,
 				8DC3C4B023465D7B00C359EC /* Assets.xcassets */,
 				8DC3C4B523465D7B00C359EC /* LaunchScreen.storyboard */,
 				8DC3C4B823465D7B00C359EC /* Info.plist */,
@@ -301,11 +339,21 @@
 			files = (
 				8DC3C4AD23465D7A00C359EC /* SportsNews.xcdatamodeld in Sources */,
 				8DC3C4A823465D7A00C359EC /* AppDelegate.swift in Sources */,
+				8D1E12CF2406F4E8009F92B8 /* TimeStamp.swift in Sources */,
+				8D1E12D524070D02009F92B8 /* Teams.swift in Sources */,
+				8D1E12C72406F142009F92B8 /* NBATweetsView.swift in Sources */,
 				8DC3C4AF23465D7A00C359EC /* ContentView.swift in Sources */,
+				8D1E12D124070A24009F92B8 /* NFLTweetsView.swift in Sources */,
 				8DC3C4DE2346618000C359EC /* TweetsManager.swift in Sources */,
 				8DC3C4AA23465D7A00C359EC /* SceneDelegate.swift in Sources */,
 				8DC3C4DC23465F7000C359EC /* Tweets.swift in Sources */,
+				8D1E12D324070B5E009F92B8 /* TeamTweetsView.swift in Sources */,
 				8D11C153236A1947006BAC83 /* TweetsViewModel.swift in Sources */,
+				8D1E12D724071534009F92B8 /* SearchView.swift in Sources */,
+				8D1E12CD2406F44F009F92B8 /* PageView.swift in Sources */,
+				8D1E12CB2406F2BC009F92B8 /* NavView.swift in Sources */,
+				8D509CCE2407204D00DD6C54 /* SearchBarView.swift in Sources */,
+				8D1E12C92406F1D9009F92B8 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

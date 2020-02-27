@@ -1,0 +1,75 @@
+//
+//  NBATeams.swift
+//  SportsNews
+//
+//  Created by James Militante on 2020-02-26.
+//  Copyright © 2020 James Militante. All rights reserved.
+//
+
+import Foundation
+
+
+    var Teams:[String:String] = [
+        "Atlanta Hawks": "AtlantaHawks",
+        "Boston Celtics": "bostonceltics",
+        "Brooklyn Nets": "GoNets",
+        "Charlotte Hornets": "CharlotteHornets",
+        "Chicago Bulls": "chicagobulls",
+        "Cleveland Cavaliers": "clevelandcavs",
+        "Dallas Mavericks": "mavericks",
+        "Denver Nuggets": "denvernuggets",
+        "Detroit Pistons": "DetroitPistons",
+        "Golden State Warriors": "warriors",
+        "Houston Rockets": "rockets",
+        "Indiana Pacers": "pacers",
+        "LA Clippers": "LAClippers",
+        "LA Lakers": "lakers",
+        "Memphis Grizzlies": "memphisgrizzlies",
+        "Miami Heat": "heat",
+        "Milwaukee Bucks": "MkeBucks",
+        "Minnesota Timberwolves": "timberwolves",
+        "New Orleans Pelicans": "NOLAPelicans",
+        "New York Knicks": "NYKnicks",
+        "Oklahoma City Thunder": "Thunder",
+        "Orlando Magic": "OrlandoMagic",
+        "Philadelphia Sixers": "sixers",
+        "Phoenix Suns": "suns",
+        "Portland Trail Blazers": "ripcity",
+        "Sacramento Kings": "kings",
+        "San Antonio Spurs": "NBASpurs",
+        "Toronto Raptors": "torontoraptors",
+        "Utah Jazz": "Utahjazz",
+        "Washington Wizards": "washingtonwizards",
+        "Arizona Cardinals": "AZCardinals",
+        "Atlanta Falcons": "falcons",
+        "Baltimore Ravens": "ravens",
+        "Buffalo Bills": "buffalobills",
+        "Carolina Panthers": "panthers",
+        "Chicago Bears": "CHIBears",
+        "Cincinnati Bengals": "bengals",
+        "Cleveland Browns": "Browns",
+        "Dallas Cowboys": "cowboys",
+        "Denver Broncos": "DenverBroncos",
+        "Detroit Lions": "detroitlions",
+        "Green Bay Packers": "GreenBayPackers",
+        "Houston Texans": "Texans",
+        "Indianapolis Colts": "Colts",
+        "Jacksonville Jaguars": "Jaguars",
+        "Kansas City Chiefs": "KansasCityChiefs",
+        "Los Angeles Chargers": "Chargers",
+        "Los Angeles Rams": "LosAngelesRams",
+        "Miami Dolphins": "miamidolphins",
+        "Minnesota Vikings": "minnesotavikings",
+        "New England Patriots": "Patriots",
+        "New Orleans Saints": "Saints",
+        "New York Giants": "NYGiants",
+        "New York Jets": "nyjets",
+        "Oakland Raiders": "oaklandraiders",
+        "Philadelphia Eagles": "eagles",
+        "Pittsburgh Steelers": "steelers",
+        "San Francisco 49ers": "49ers",
+        "Seattle Seahawks":"Seahawks",
+        "Tampa Bay Buccaneers": "buccaneers",
+        "Tennessee Titans": "Tennesseetitans",
+        "Washington Redskins": "Redskins"
+    ]
