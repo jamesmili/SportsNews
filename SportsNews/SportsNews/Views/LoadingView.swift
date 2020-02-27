@@ -19,11 +19,11 @@ struct LoadingView: View{
         VStack(alignment: .leading){
             ForEach((1...self.lines), id: \.self){_ in
                 RoundedRectangle(cornerRadius: 20, style: .continuous)
-                .fill(Color(red: 175/255, green: 175/255, blue: 175/255))
+                .fill(Color("loading"))
                     .frame(height: 12)
             }
              RoundedRectangle(cornerRadius: 20, style: .continuous)
-            .fill(Color(red: 195/255, green: 195/255, blue: 195/255))
+            .fill(Color("loading"))
             .frame(width: 65, height: 10)
         }
     }

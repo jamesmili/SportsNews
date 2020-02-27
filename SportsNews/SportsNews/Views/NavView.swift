@@ -18,8 +18,10 @@ struct NavView: View{
                 VStack(alignment: .leading,spacing: 12, content: {
                     Text(tweet.title)
                     .lineLimit(3)
+                    .foregroundColor(Color("text"))
                     Text(getTimeStamp(utc: tweet.utc))
                     .font(Font.custom("timestamp", size: 10))
+                    .foregroundColor(Color("text"))
                 })
             }
         }

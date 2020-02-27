@@ -10,25 +10,31 @@ import SwiftUI
 
 struct SearchView: View {
     @State private var teams = Teams
-    @ObservedObject var tweets: TweetsViewModel
     @State private var search = ""
     
     var body: some View {
-        NavigationView{
-            VStack{
-                SearchBarView(text: $search)
-                List{
-                    ForEach(Array(self.teams.keys).sorted().filter{$0.hasPrefix(search) || search == ""}, id: \.self){ key in
-                        NavigationLink<Text, TeamTweetsView>(destination: TeamTweetsView(team: key, subreddit: self.teams[key]!, tweets: self.tweets)){
-                            Text(key)
-                        }
-                    }
+        VStack{
+            SearchBarView(searchText: $search)
+            List{
+                ForEach(Array(self.teams.keys).sorted().filter{$0.hasPrefix(search) || search == "" }, id: \.self){ key in
+                    NavigationLink(destination: TweetsView(content: key, subreddit: self.teams[key]!)){
+                        Text(key)
+                        .foregroundColor(Color("text"))
+                    }.listRowBackground(Color("tweetsBackground"))
                 }
             }
+        }
         .navigationBarTitle("Search")
+        .background(Color("navBackground"))
+        .onAppear{
+            UIApplication.shared.endEditing()
         }
     }
-
 }
 
+extension UIApplication {
+    func endEditing() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
 
