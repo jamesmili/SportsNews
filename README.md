@@ -1,6 +1,6 @@
 # SportsNews
 
-![app](https://i.imgur.com/bbP23lE.png)
+![app](https://i.imgur.com/4uKms4o.jpg)
 
 ## Description
 
